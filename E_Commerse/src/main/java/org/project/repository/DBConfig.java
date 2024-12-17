@@ -3,7 +3,7 @@ package org.project.repository;
 import java.io.*;
 import java.sql.*;
 import java.util.Properties;
-import static java.lang.System.*;
+//import static java.lang.System.*;
 
 public class DBConfig {
 

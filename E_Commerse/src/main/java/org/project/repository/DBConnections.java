@@ -4,9 +4,9 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.util.LinkedHashMap;
+//import java.util.LinkedHashMap;
 
-import org.project.repository.DBConfig;
+//import org.project.repository.DBConfig;
 
 public class DBConnections {
     protected DBConfig db=DBConfig.getInstance();
