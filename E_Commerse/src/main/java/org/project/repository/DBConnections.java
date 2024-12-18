@@ -14,4 +14,14 @@ public class DBConnections {
     protected Statement stmt=db.getStatement();
     protected PreparedStatement pstmt=db.getPreparedStatement();
     protected ResultSet rs=db.getResultSet();	
+
+public DBConnections() {
+    try {
+        if (conn != null) {
+            stmt = conn.createStatement();
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
 }

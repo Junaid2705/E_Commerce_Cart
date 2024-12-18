@@ -39,7 +39,6 @@ public class DBConfig {
                 System.out.println("Connection is successful");
             } else {
                 System.out.println("Connection failed");
-                System.out.println("Helooooo");
             }
 
         } catch (Exception ex) {

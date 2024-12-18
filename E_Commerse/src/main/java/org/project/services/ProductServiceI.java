@@ -2,5 +2,5 @@ package org.project.services;
 
 public interface ProductServiceI {
 
-	public boolean addProdUct();
+	public boolean addProduct();
 }
