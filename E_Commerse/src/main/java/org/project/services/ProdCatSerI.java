@@ -1,12 +1,9 @@
-package org.project.repository;
-
-import java.util.List;
-
+package org.project.services;
 
 import org.project.models.ProductCategories;
 import java.util.List;
 
-public interface ProdCatRepoI {
+public interface ProdCatSerI {
 
     boolean addCategory(String categoryName);
 

@@ -1,6 +1,17 @@
 package org.project.repository;
 
-public interface ProductRepoI {
-	public boolean addProduct();
+import org.project.models.Products;
+import java.util.List;
 
+public interface ProductRepoI {
+
+    boolean addProduct(Products product);
+
+    boolean updateProduct(Products product);
+
+    boolean removeProduct(int productId);
+
+    List<Products> getProductsByCategory(int categoryId);
+
+    List<Products> getAllProducts();
 }

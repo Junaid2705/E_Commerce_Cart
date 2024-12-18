@@ -62,7 +62,7 @@ public class Login_Services extends DBConnections {
 
     // Validate login credentials
     private boolean validateLogin(String email, String password, String userType) {
-        String query = "SELECT * FROM users WHERE uemail = ? AND password = ? AND usertype = ?";
+        String query = "select * from users where uemail = ? and password = ? and usertype = ?";
         try {
             pstmt = conn.prepareStatement(query);
             pstmt.setString(1, email);

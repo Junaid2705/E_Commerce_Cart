@@ -7,9 +7,9 @@ public class ProductCategories {
 	public int getCid() {
 		return cid;
 	}
-	public void setCid(int cid) {
-		this.cid = cid;
-	}
+//	public void setCid(int cid) {
+//		this.cid = cid;
+//	}
 	public String getCname() {
 		return cname;
 	}
