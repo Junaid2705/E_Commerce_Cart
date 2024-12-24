@@ -3,77 +3,66 @@ package org.project.repository;
 import java.io.*;
 import java.sql.*;
 import java.util.Properties;
-//import static java.lang.System.*;
 
-public class DBConfig {
-
-    // PathHelper content
-
-    // DBConfig content
-    private static Connection conn =null;
-    private static PreparedStatement pstmt=null;
-    private static Statement stmt=null;
-    private static ResultSet rs=null;
-    private static DBConfig db=null;
-
-    // Constructor initializes PathHelper and DBConfig
-    private DBConfig() throws IOException {
-        // PathHelper logic
-        File file = new File("");
-        FileReader fr=new FileReader(file.getAbsolutePath()+"\\src\\main\\resources\\application.properties");
-//.substring(0,file.getAbsolutePath().length()
-        // DBConfig logic
-        Properties p = new Properties();
-        
-        try {
-            p.load(fr);
-            // Handle IOException for loading the file
-            String driver = p.getProperty("Driver");
-            String url = p.getProperty("url");
-            String password = p.getProperty("password");
-            String username = p.getProperty("username");
-
-            Class.forName(driver);
-            conn = DriverManager.getConnection(url, username, password);
-            if (conn != null) {
-                System.out.println("Connection is successful");
-            } else {
-                System.out.println("Connection failed");
-            }
-
-        } catch (Exception ex) {
-        	System.out.println("Error is " + ex);
-        	ex.getStackTrace();
-        	System.out.println("Good Morning");
-        }
-    } // Constructor ends
-
-    // Singleton instance
-    public static DBConfig getInstance() {
-        if (db == null) {
-            try {
-                db = new DBConfig();
-            } catch (Exception e) {
-                e.printStackTrace();
-                System.out.println("Hello");
-            }
-        }
-        return db;
-    }
-
-    public Connection getConnection() {
-        return conn;
-    }
-
-    public PreparedStatement getPreparedStatement() {
-        return pstmt;
-    }
-
-    public Statement getStatement() {
-        return stmt;
-    }
-
-    public ResultSet getResultSet() {
-        return rs;
-    }
-}
+ public class DBConfig
+ {
+	 protected static Connection conn;
+	 protected static PreparedStatement stmt;
+	 protected static ResultSet rs;
+	 private static DBConfig db=null;
+	 private DBConfig()
+	 { 
+		 try
+			 {
+				  Class.forName("com.mysql.cj.jdbc.Driver");
+				  File f =new File("."); 
+				  String path = f.getAbsolutePath();
+				  
+				  FileInputStream fin = new FileInputStream(path+"\\src\\main\\resources\\application.properties");
+				  
+				  Properties p = new Properties();
+				  p.load(fin);
+				  String driver = p.getProperty("Driver");
+				  String url = p.getProperty("url");
+				  String username = p.getProperty("username");
+				  String password = p.getProperty("password");
+				  conn = DriverManager.getConnection(url,username,password);
+				  
+				  //System.out.println(driver+"\n"+username+"\n"+password+"\n"+url);
+			 }
+			 catch(Exception ex)
+			 { 
+				 System.out.println("Error is "+ex);
+			 }
+	
+	 }
+	 public static DBConfig getInstance()
+	 {
+		 if(db==null)
+		 {
+			 db = new DBConfig();
+		 }
+		return db;
+		 
+	 }
+	 public static Connection getConnection()
+	 {if(conn==null)
+	 {
+		System.out.println("I am Null");
+	 }
+	return conn;
+	 }
+	 public static PreparedStatement getStatement()
+	 {
+		 return  stmt;
+	 }
+	 public static ResultSet getResultSet()
+	 {
+		 return rs;
+	 }
+	 
+//	public static void main(String[] args) {
+//		DBConfig dbConfig = new DBConfig();
+//		System.out.println("Connection "+conn.hashCode());
+//	}
+ }

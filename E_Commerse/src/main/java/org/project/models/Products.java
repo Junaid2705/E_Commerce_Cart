@@ -6,6 +6,7 @@ public class Products {
 	private String pname;
 	private int price;
 	private int qty;
+	private int categoryId;
 	
 	public int getProdid() {
 		return prodid;
@@ -31,5 +32,11 @@ public class Products {
 	public void setQty(int qty) {
 		this.qty = qty;
 	}
-	
+	public void setProdid1(int categoryId) {
+		// TODO Auto-generated method stub
+		this.categoryId=categoryId;
+	}
+	public int getProdid1() {
+		return categoryId;
+	}
 }
