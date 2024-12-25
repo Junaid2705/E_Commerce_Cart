@@ -7,29 +7,31 @@ public class LoginRepoImp extends DBConnections implements LoginRepo {
 
     @Override
     public boolean isUser(LoginModel login) {
-        String query = " select  * from users where uemail = ? and  password = ?";
+        String query = "SELECT * FROM users WHERE uemail = ? AND password = ?";
 
         try {
             // Create a new PreparedStatement for the specific query
-        	
             stmt = conn.prepareStatement(query);
 
             // Set the parameters for the query
-            
-            
             stmt.setString(1, login.getEmail());
             stmt.setString(2, login.getPassword());
 
             // Execute the query and check if a user exists
             rs = stmt.executeQuery();
-            return rs.next(); 
-            // If a result exists, return true
-
+            if (rs.next()) {
+                // If a result exists, set the user details
+                login.setUserType(rs.getString("usertype")); // Fetch and set userType
+                login.setName(rs.getString("uname")); // Optional: set name if needed
+                return true;
+            }
+            return false; // No matching user found
         } catch (SQLException ex) {
             System.out.println("Error in isUser: " + ex.getMessage());
             return false;
         }
     }
+
 
 	
 	@Override

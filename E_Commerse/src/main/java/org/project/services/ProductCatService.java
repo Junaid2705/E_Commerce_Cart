@@ -17,4 +17,6 @@ public interface ProductCatService {
 	    ProductCatModel getProductCatById(int id);
 	    boolean updateProductCat(int id, ProductCatModel procat);
 	    boolean deleteProductCat(int id);
+
+		
 }

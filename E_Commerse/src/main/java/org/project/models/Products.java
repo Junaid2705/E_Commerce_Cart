@@ -1,42 +1,60 @@
 package org.project.models;
 
 public class Products {
-	
-	private int prodid;
-	private String pname;
-	private int price;
-	private int qty;
-	private int categoryId;
-	
-	public int getProdid() {
-		return prodid;
-	}
-	public void setProdid(int prodid) {
-		this.prodid = prodid;
-	}
-	public String getPname() {
-		return pname;
-	}
-	public void setPname(String pname) {
-		this.pname = pname;
-	}
-	public int getPrice() {
-		return price;
-	}
-	public void setPrice(int price) {
-		this.price = price;
-	}
-	public int getQty() {
-		return qty;
-	}
-	public void setQty(int qty) {
-		this.qty = qty;
-	}
-	public void setProdid1(int categoryId) {
-		// TODO Auto-generated method stub
-		this.categoryId=categoryId;
-	}
-	public int getProdid1() {
-		return categoryId;
-	}
+    private int id;
+    private String name;
+    private double price;
+    private int quantity;
+    private int categoryId; // New field to associate product with a category
+
+    // Constructors, getters, and setters
+    public Products() {}
+
+    public Products(int id, String name, double price, int quantity, int categoryId) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+        this.categoryId = categoryId;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public int getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
+    }
 }
