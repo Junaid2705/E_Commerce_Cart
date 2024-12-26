@@ -191,4 +191,31 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
         }
         return products;
     }
+
+	@Override
+	public List<Products> getProductsByCategory(String categoryName) {
+	    List<Products> products = new ArrayList<>();
+	    String query = 
+	        "SELECT p.pid, p.name, p.price, p.quantity, p.cid FROM products p INNER JOIN productcategories c ON p.cid = c.cid WHERE c.name = ? ";
+	
+	    try {
+	        stmt = conn.prepareStatement(query);
+	        stmt.setString(1, categoryName);
+	        rs = stmt.executeQuery();
+	        while (rs.next()) {
+	            Products product = new Products();
+	            product.setId(rs.getInt("pid"));
+	            product.setName(rs.getString("name"));
+	            product.setPrice(rs.getDouble("price"));
+	            product.setQuantity(rs.getInt("quantity"));
+	            product.setCategoryId(rs.getInt("cid"));
+	            products.add(product);
+	        }
+	        logger.info("Retrieved products for category: " + categoryName);
+	    } catch (SQLException ex) {
+	        logger.error("Error in getProductsByCategory: " + ex.getMessage());
+	    }
+	    return products;
+	}
+
 }

@@ -62,4 +62,12 @@ public class ProductServiceImp implements ProductService {
 		return productRepository.filterProductsByPriceRange(minPrice, maxPrice);
 	}
 
+	@Override
+	public List<Products> getProductsByCategory(String categoryName) {
+        if (categoryName == null || categoryName.isEmpty()) {
+            throw new IllegalArgumentException("Category name cannot be null or empty");
+        }
+        return productRepository.getProductsByCategory(categoryName);
+    }
+
 }

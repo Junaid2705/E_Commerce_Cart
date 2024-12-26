@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 import org.project.models.LoginModel;
+import org.project.services.CartService;
+import org.project.services.CartServiceImpl;
 import org.project.services.LoginService;
 import org.project.services.LoginServiceImp;
 import org.project.models.ProductCatModel;
@@ -29,6 +31,7 @@ public class E_Commerce_Cart_System {
         ProductCatService productCatService = new ProductCatServiceImpl();
         ProductCatModel productCatModel = new ProductCatModel();
         ProductService productService = new ProductServiceImp();
+        CartService crtService = new CartServiceImpl(); 
         boolean value = true;
         boolean isAdminLoggedIn = false;
         boolean isUserLoggedIn = false;
@@ -170,8 +173,10 @@ public class E_Commerce_Cart_System {
                     System.out.println("6. Delete Product");
                     System.out.println("7. Show All Products");
                     System.out.println("8. Back to Main Menu");
-                    System.out.println("9. Filter Product Category by Name");
-                    System.out.println("10. Filter Products by Price Range");
+//                    System.out.println("9. Filter Product Category by Name");
+                    System.out.println("9. Filter Products by Price Range");
+                    System.out.println("10. Filter Products by Category");
+
                     System.out.print("Enter your choice: ");
                     int adminChoice = sc.nextInt();
 
@@ -288,21 +293,21 @@ public class E_Commerce_Cart_System {
                             }
                             break;
 
-                        case 9:
-                            System.out.print("Enter product category name to filter: ");
-                            String filterName = sc.next();
-                            List<ProductCatModel> filteredByName = productCatService.filterProductCatsByName(filterName);
-                            if (filteredByName.isEmpty()) {
-                                System.out.println("No product category found with the name \"" + filterName + "\".");
-                            } else {
-                                System.out.println("Filtered Product Category by Name:");
-                                for (ProductCatModel productcat : filteredByName) {
-                                    System.out.println("ID: " + productcat.getCid() + ", Name: " + productcat.getName());
-                                }
-                            }
-                            break;
+//                        case 9:
+//                            System.out.print("Enter product category name to filter: ");
+//                            String filterName = sc.next();
+//                            List<ProductCatModel> filteredByName = productCatService.filterProductCatsByName(filterName);
+//                            if (filteredByName.isEmpty()) {
+//                                System.out.println("No product category found with the name \"" + filterName + "\".");
+//                            } else {
+//                                System.out.println("Filtered Product Category by Name:");
+//                                for (ProductCatModel productcat : filteredByName) {
+//                                    System.out.println("ID: " + productcat.getCid() + ", Name: " + productcat.getName());
+//                                }
+//                            }
+//                            break;
 
-                        case 10:
+                        case 9:
                             System.out.print("Enter minimum price: ");
                             double minPrice = sc.nextDouble();
                             System.out.print("Enter maximum price: ");
@@ -318,6 +323,22 @@ public class E_Commerce_Cart_System {
                                 }
                             }
                             break;
+                        
+                        case 10:
+                            System.out.print("Enter category name to filter products: ");
+                            String adminCategoryFilter = sc.next();
+                            List<Products> productsByAdminCategory = productService.getProductsByCategory(adminCategoryFilter);
+                            if (productsByAdminCategory.isEmpty()) {
+                                System.out.println("No products found for category: " + adminCategoryFilter);
+                            } else {
+                                System.out.println("Filtered Products by Category:");
+                                for (Products product : productsByAdminCategory) {
+                                    System.out.println("ID: " + product.getId() + ", Name: " + product.getName() +
+                                            ", Price: " + product.getPrice() + ", Quantity: " + product.getQuantity());
+                                }
+                            }
+                            break;
+
 
                         case 8:
                             System.out.println("Returning to the main menu...");
@@ -334,7 +355,8 @@ public class E_Commerce_Cart_System {
                     }
                 	System.out.println("User Options:");
                     System.out.println("1. Show All Products");
-                    System.out.println("2. Select Products");
+                    System.out.println("2. Filter Products by Category");
+                    System.out.println("3. Select Products");
                     System.out.print("Enter your choice: ");
                     int userChoice = sc.nextInt();
                     switch(userChoice)
@@ -351,9 +373,46 @@ public class E_Commerce_Cart_System {
                             }
                         }
                     	break;
-                    case 2 :
-                    	
-                    	break;
+                   
+                    case 2:
+                        System.out.print("Enter category name to filter products: ");
+                        String userCategoryFilter = sc.next();
+                        List<Products> productsByUserCategory = productService.getProductsByCategory(userCategoryFilter);
+                        if (productsByUserCategory.isEmpty()) {
+                            System.out.println("No products found for category: " + userCategoryFilter);
+                        } else {
+                            System.out.println("Filtered Products by Category:");
+                            for (Products product : productsByUserCategory) {
+                                System.out.println("ID: " + product.getId() + ", Name: " + product.getName() +
+                                        ", Price: " + product.getPrice() + ", Quantity: " + product.getQuantity());
+                            }
+                        }
+                        break;
+                    case 3:
+                    	System.out.print("Enter the CartID: ");
+                        int ctid = sc.nextInt();
+                        
+                        System.out.print("Enter your username: ");
+                        String crtUser = sc.nextLine();
+                        sc.nextLine();
+                        System.out.print("Enter the product category: ");
+                        String crtCat = sc.nextLine();
+                       
+                        System.out.print("Enter the product name: ");
+                        String crtProd = sc.nextLine();
+
+                        System.out.print("Enter the quantity: ");
+                        int qty = sc.nextInt();
+                        sc.nextLine(); // Consume newline
+
+                        boolean isAdded = crtService.isAddCart(ctid,crtUser, crtCat, crtProd, qty);
+                        if (isAdded) {
+                            System.out.println("Product successfully added to the cart!");
+                        } else {
+                            System.out.println("Failed to add product to the cart. Please try again.");
+                        }
+                        break;
+
                     }
                 	break;
                 case 0:
