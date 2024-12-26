@@ -1,10 +1,18 @@
 package org.project.repository;
 
 import java.sql.*;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+import org.project.clientApp.E_Commerce_Cart_System;
 import org.project.models.LoginModel;
 
 public class LoginRepoImp extends DBConnections implements LoginRepo {
-
+	static Logger logger = Logger.getLogger(LoginRepoImp.class);
+	 static
+	 {
+		 PropertyConfigurator.configure("F:\\E-Commerce Cart System\\E_Commerse\\src\\main\\resources\\logApplication.properties");
+	 }
     @Override
     public boolean isUser(LoginModel login) {
         String query = "SELECT * FROM users WHERE uemail = ? AND password = ?";
@@ -27,7 +35,7 @@ public class LoginRepoImp extends DBConnections implements LoginRepo {
             }
             return false; // No matching user found
         } catch (SQLException ex) {
-            System.out.println("Error in isUser: " + ex.getMessage());
+            logger.error("Error is "+ex);
             return false;
         }
     }
@@ -48,7 +56,7 @@ public class LoginRepoImp extends DBConnections implements LoginRepo {
 	        int result = stmt.executeUpdate(); // Insert the user into the database
 	        return result > 0; // Return true if at least one row was inserted (successful registration)
 	    } catch (SQLException ex) {
-	        System.out.println("Error in registerUser: " + ex.getMessage());
+	    	logger.error("Error is "+ex);
 	        return false; // Registration failed due to an error
 	    }
 	}

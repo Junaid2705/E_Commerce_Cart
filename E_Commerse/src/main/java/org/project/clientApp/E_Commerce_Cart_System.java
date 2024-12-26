@@ -1,5 +1,6 @@
 package org.project.clientApp;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 import org.project.models.LoginModel;
@@ -11,10 +12,17 @@ import org.project.services.ProductCatServiceImpl;
 import org.project.models.Products;
 import org.project.services.ProductService;
 import org.project.services.ProductServiceImp;
+import org.apache.log4j.*;
 
 public class E_Commerce_Cart_System {
-
+ static Logger logger = Logger.getLogger(E_Commerce_Cart_System.class);
+ static
+ {
+	 PropertyConfigurator.configure("F:\\E-Commerce Cart System\\E_Commerse\\src\\main\\resources\\logApplication.properties");
+ }
     public static void main(String[] args) {
+    	
+    	
         Scanner sc = new Scanner(System.in);
         LoginService loginService = new LoginServiceImp();
         LoginModel loginModel = new LoginModel();
@@ -22,8 +30,9 @@ public class E_Commerce_Cart_System {
         ProductCatModel productCatModel = new ProductCatModel();
         ProductService productService = new ProductServiceImp();
         boolean value = true;
-        boolean isAdminLoggedIn = false; // Track if an admin is logged in
-
+        boolean isAdminLoggedIn = false;
+        boolean isUserLoggedIn = false;
+        logger.info("Main Method Started");
         while (value) {
             System.out.println("Please choose an option:");
             System.out.println("1. Login");
@@ -32,7 +41,10 @@ public class E_Commerce_Cart_System {
             if (isAdminLoggedIn) {
                 System.out.println("4. Admin Options");
             }
-            System.out.println("9. Exit");
+            if (isUserLoggedIn) {
+                System.out.println("5. User Options");
+            }
+            System.out.println("0. Exit");
             System.out.print("Enter choice: ");
             int choice = sc.nextInt();
 
@@ -43,9 +55,10 @@ public class E_Commerce_Cart_System {
                     System.out.println("2. Register");
                     System.out.print("Enter choice: ");
                     int actionChoice = sc.nextInt();
-
+                    
                     switch (actionChoice) {
                         case 1: // Login
+                        	logger.info("Login Succesful");
                             System.out.print("Enter email: ");
                             String email = sc.next();
                             System.out.print("Enter password: ");
@@ -63,9 +76,18 @@ public class E_Commerce_Cart_System {
                                 if ("admin".equalsIgnoreCase(userType)) {
                                     System.out.println("Welcome Admin! You have full access.");
                                     isAdminLoggedIn = true;
-                                } else {
+                                }
+                                else
+                                {
+                                	isAdminLoggedIn = false;
+                                }
+                                if("user".equalsIgnoreCase(userType)){
                                     System.out.println("Welcome " + loginModel.getName() + ", you have limited access.");
-                                    isAdminLoggedIn = false;
+                                    isUserLoggedIn = true;
+                                }
+                                else
+                                {
+                                	isUserLoggedIn = false;
                                 }
                             } else {
                                 System.out.println("Invalid information.");
@@ -73,6 +95,7 @@ public class E_Commerce_Cart_System {
                             break;
 
                         case 2:
+                        	logger.info("Registration Succesful");
                             System.out.print("Enter your name: ");
                             String name = sc.next();
                             System.out.print("Enter your email: ");
@@ -263,16 +286,15 @@ public class E_Commerce_Cart_System {
                             break;
 
                         case 9:
-                            System.out.print("Enter product name to filter: ");
+                            System.out.print("Enter product category name to filter: ");
                             String filterName = sc.next();
-                            List<Products> filteredByName = productService.filterProductsByName(filterName);
+                            List<ProductCatModel> filteredByName = productCatService.filterProductCatsByName(filterName);
                             if (filteredByName.isEmpty()) {
-                                System.out.println("No products found with the name \"" + filterName + "\".");
+                                System.out.println("No product category found with the name \"" + filterName + "\".");
                             } else {
-                                System.out.println("Filtered Products by Name:");
-                                for (Products product : filteredByName) {
-                                    System.out.println("ID: " + product.getId() + ", Name: " + product.getName() +
-                                            ", Price: " + product.getPrice() + ", Quantity: " + product.getQuantity());
+                                System.out.println("Filtered Product Category by Name:");
+                                for (ProductCatModel productcat : filteredByName) {
+                                    System.out.println("ID: " + productcat.getCid() + ", Name: " + productcat.getName());
                                 }
                             }
                             break;
@@ -302,8 +324,36 @@ public class E_Commerce_Cart_System {
                             System.out.println("Invalid choice. Please select a valid option.");
                     }
                     break;
-
-                case 9:
+                case 5:
+                	if (!isUserLoggedIn) {
+                        System.out.println("These Option are for Users");
+                        break;
+                    }
+                	System.out.println("User Options:");
+                    System.out.println("1. Show All Products");
+                    System.out.println("2. Select Products");
+                    System.out.print("Enter your choice: ");
+                    int userChoice = sc.nextInt();
+                    switch(userChoice)
+                    {
+                    case 1:
+                    	List<Products> allProducts = productService.getAllProducts();
+                        if (allProducts.isEmpty()) {
+                            System.out.println("No products available.");
+                        } else {
+                            System.out.println("All Products:");
+                            for (Products product : allProducts) {
+                                System.out.println("ID: " + product.getId() + ", Name: " + product.getName() +
+                                        ", Price: " + product.getPrice() + ", Quantity: " + product.getQuantity());
+                            }
+                        }
+                    	break;
+                    case 2 :
+                    	
+                    	break;
+                    }
+                	break;
+                case 0:
                     System.out.println("Exiting the application...");
                     value = false;
                     break;

@@ -1,12 +1,22 @@
 package org.project.repository;
 
+import org.apache.log4j.*;
+import org.project.clientApp.E_Commerce_Cart_System;
 import org.project.models.Products;
+
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProductsRepoImp extends DBConnections implements ProductRepo {
 
+public class ProductsRepoImp extends DBConnections implements ProductRepo {
+	
+	static Logger logger = Logger.getLogger(ProductsRepoImp.class);
+	 static
+	 {
+		 PropertyConfigurator.configure("F:\\E-Commerce Cart System\\E_Commerse\\src\\main\\resources\\logApplication.properties");
+	 }
     @Override
     public boolean isProduct(Products product) {
         String query = "SELECT * FROM products WHERE name = ?";
@@ -16,7 +26,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
             rs = stmt.executeQuery();
             return rs.next();
         } catch (SQLException ex) {
-            System.out.println("Error in isProduct: " + ex.getMessage());
+            logger.fatal("Error in isProduct: " + ex);
             return false;
         }
     }
@@ -30,15 +40,16 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
             rs = stmt.executeQuery();
             while (rs.next()) {
                 Products product = new Products();
-                product.setId(rs.getInt("id"));
+                product.setId(rs.getInt("pid"));
                 product.setName(rs.getString("name"));
                 product.setPrice(rs.getDouble("price"));
                 product.setQuantity(rs.getInt("quantity"));
-                product.setCategoryId(rs.getInt("category_id"));
+                product.setCategoryId(rs.getInt("cid"));
                 products.add(product);
+                logger.info("Product Added Succesfully");
             }
         } catch (SQLException ex) {
-            System.out.println("Error in getAllProducts: " + ex.getMessage());
+            logger.error("Error in getAllProducts: " + ex.getMessage());
         }
         return products;
     }
@@ -55,7 +66,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
             int rowsAffected = stmt.executeUpdate();
             return rowsAffected > 0;
         } catch (SQLException ex) {
-            System.out.println("Error in addProduct: " + ex.getMessage());
+            logger.fatal("Error in adding product : "+ex); 
             return false;
         }
     }
@@ -70,7 +81,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
             rs = stmt.executeQuery();
             while (rs.next()) {
                 Products product = new Products();
-                product.setId(rs.getInt("id"));
+                product.setId(rs.getInt("pid"));
                 product.setName(rs.getString("name"));
                 product.setPrice(rs.getDouble("price"));
                 product.setQuantity(rs.getInt("quantity"));
@@ -78,7 +89,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
                 products.add(product);
             }
         } catch (SQLException ex) {
-            System.out.println("Error in getProductsByName: " + ex.getMessage());
+           logger.error("Error in getProductsByName: " + ex.getMessage());
         }
         return products;
     }
@@ -93,14 +104,14 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
             rs = stmt.executeQuery();
             if (rs.next()) {
                 product = new Products();
-                product.setId(rs.getInt("id"));
+                product.setId(rs.getInt("pid"));
                 product.setName(rs.getString("name"));
                 product.setPrice(rs.getDouble("price"));
                 product.setQuantity(rs.getInt("quantity"));
                 product.setCategoryId(rs.getInt("cid"));
             }
         } catch (SQLException ex) {
-            System.out.println("Error in getProductById: " + ex.getMessage());
+            logger.error("Error in getProductById: " + ex.getMessage());
         }
         return product;
     }
@@ -118,7 +129,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
             int rowsAffected = stmt.executeUpdate();
             return rowsAffected > 0;
         } catch (SQLException ex) {
-            System.out.println("Error in updateProduct: " + ex.getMessage());
+            logger.error("Error in updateProduct: " + ex.getMessage());
             return false;
         }
     }
@@ -132,7 +143,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
             int rowsAffected = stmt.executeUpdate();
             return rowsAffected > 0;
         } catch (SQLException ex) {
-            System.out.println("Error in deleteProduct: " + ex.getMessage());
+            logger.error("Error in deleteProduct: " + ex.getMessage());
             return false;
         }
     }
@@ -155,7 +166,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
                 products.add(product);
             }
         } catch (SQLException ex) {
-            System.out.println("Error in filterProductsByName: " + ex.getMessage());
+            logger.error("Error in filterProductsByName: " + ex.getMessage());
         }
         return products;
     }
@@ -179,7 +190,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
                 products.add(product);
             }
         } catch (SQLException ex) {
-            System.out.println("Error in filterProductsByPriceRange: " + ex.getMessage());
+            logger.error("Error in filterProductsByPriceRange: " + ex.getMessage());
         }
         return products;
     }

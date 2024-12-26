@@ -62,4 +62,18 @@ public class ProductCatServiceImpl implements ProductCatService {
 		// TODO Auto-generated method stub
 		return productrepo.deleteProductCat(id);
 	}
+
+
+	@Override
+	public List<ProductCatModel> filterProductCatsByName(String name) {
+		// TODO Auto-generated method stub
+		return productrepo.filterProductCatsByName(name);
+	}
+
+
+	@Override
+	public List<ProductCatModel> filterProductCatsByPriceRange(double minPrice, double maxPrice) {
+		// TODO Auto-generated method stub
+		return productrepo.filterProductCatsByPriceRange(minPrice, maxPrice);
+	}
 }

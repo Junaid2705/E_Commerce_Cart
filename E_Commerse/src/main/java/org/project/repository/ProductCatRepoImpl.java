@@ -1,12 +1,19 @@
 package org.project.repository;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+import org.project.clientApp.E_Commerce_Cart_System;
 import org.project.models.ProductCatModel;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ProductCatRepoImpl extends DBConnections implements ProductCatRepo {
-
+	static Logger logger = Logger.getLogger(ProductCatRepoImpl.class);
+	 static
+	 {
+		 PropertyConfigurator.configure("F:\\E-Commerce Cart System\\E_Commerse\\src\\main\\resources\\logApplication.properties");
+	 }
     @Override
     public boolean isProductCat(ProductCatModel procat) {
         String query = "select * from productcategories where name = ?";
@@ -34,7 +41,7 @@ public class ProductCatRepoImpl extends DBConnections implements ProductCatRepo 
                 categories.add(category);
             }
         } catch (SQLException ex) {
-            System.out.println("Error in getAllProductCats: " + ex.getMessage());
+            logger.error("Error in getAllProductsCats is "+ex);
         }
         return categories;
     }
@@ -48,7 +55,7 @@ public class ProductCatRepoImpl extends DBConnections implements ProductCatRepo 
             int values = stmt.executeUpdate();
             return values > 0;
         } catch (SQLException ex) {
-            System.out.println("Error in addProductCat: " + ex.getMessage());
+        	logger.error("Error in addProduct is "+ex);
             return false;
         }
     }
@@ -67,7 +74,7 @@ public class ProductCatRepoImpl extends DBConnections implements ProductCatRepo 
                 categories.add(category);
             }
         } catch (SQLException ex) {
-            System.out.println("Error in getProductCatsByName: " + ex.getMessage());
+            logger.error("Error in getProductCatsByName: " + ex.getMessage());
         }
         return categories;
     }
@@ -85,7 +92,7 @@ public class ProductCatRepoImpl extends DBConnections implements ProductCatRepo 
                 category.setName(rs.getString("name"));
             }
         } catch (SQLException ex) {
-            System.out.println("Error in getProductCatById: " + ex.getMessage());
+            logger.error("Error in getProductCatById: " + ex.getMessage());
         }
         return category;
     }
@@ -100,7 +107,7 @@ public class ProductCatRepoImpl extends DBConnections implements ProductCatRepo 
             int values = stmt.executeUpdate();
             return values > 0;
         } catch (SQLException ex) {
-            System.out.println("Error in updateProductCat: " + ex.getMessage());
+            logger.error("Error in updateProductCat: " + ex.getMessage());
             return false;
         }
     }
@@ -114,7 +121,7 @@ public class ProductCatRepoImpl extends DBConnections implements ProductCatRepo 
             int values = stmt.executeUpdate();
             return values > 0;
         } catch (SQLException ex) {
-            System.out.println("Error in deleteProductCat: " + ex.getMessage());
+            logger.error("Error in deleteProductCat: " + ex.getMessage());
             return false;
         }
     }
@@ -134,7 +141,7 @@ public class ProductCatRepoImpl extends DBConnections implements ProductCatRepo 
                 categories.add(category);
             }
         } catch (SQLException ex) {
-            System.out.println("Error in filterProductCatsByName: " + ex.getMessage());
+            logger.error("Error in filterProductCatsByName: " + ex.getMessage());
         }
         return categories;
     }
@@ -153,7 +160,7 @@ public class ProductCatRepoImpl extends DBConnections implements ProductCatRepo 
                 categories.add(category);
             }
         } catch (SQLException ex) {
-            System.out.println("Error in filterProductCatsByPriceRange: " + ex.getMessage());
+            logger.error("Error in filterProductCatsByPriceRange: " + ex.getMessage());
         }
         return categories;
     }

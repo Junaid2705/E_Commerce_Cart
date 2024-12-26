@@ -5,9 +5,7 @@ public class Products {
     private String name;
     private double price;
     private int quantity;
-    private int categoryId; // New field to associate product with a category
-
-    // Constructors, getters, and setters
+    private int categoryId;
     public Products() {}
 
     public Products(int id, String name, double price, int quantity, int categoryId) {
