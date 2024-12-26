@@ -143,6 +143,7 @@ public class ProductCatRepoImpl extends DBConnections implements ProductCatRepo 
         } catch (SQLException ex) {
             logger.error("Error in filterProductCatsByName: " + ex.getMessage());
         }
+        logger.info("Filtered by Category Succesfully");
         return categories;
     }
 

@@ -18,7 +18,7 @@ public class DBConfig {
 	protected static PreparedStatement stmt;
 	protected static ResultSet rs;
 	private static DBConfig db = null;
-	//private static Logger logger = Logger.getLogger(DBConfig.class);
+	
 	private static Logger logger = Logger.getLogger(DBConfig.class);
 	 static
 	 {

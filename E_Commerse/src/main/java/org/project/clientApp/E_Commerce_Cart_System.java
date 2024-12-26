@@ -170,7 +170,7 @@ public class E_Commerce_Cart_System {
                     System.out.println("6. Delete Product");
                     System.out.println("7. Show All Products");
                     System.out.println("8. Back to Main Menu");
-                    System.out.println("9. Filter Products by Name");
+                    System.out.println("9. Filter Product Category by Name");
                     System.out.println("10. Filter Products by Price Range");
                     System.out.print("Enter your choice: ");
                     int adminChoice = sc.nextInt();
@@ -223,11 +223,13 @@ public class E_Commerce_Cart_System {
                             double productPrice = sc.nextDouble();
                             System.out.print("Enter product quantity: ");
                             int productQuantity = sc.nextInt();
-
+                            System.out.print("Enter product category: ");
+                            int prodcategory = sc.nextInt();
                             Products newProduct = new Products();
                             newProduct.setName(productName);
                             newProduct.setPrice(productPrice);
                             newProduct.setQuantity(productQuantity);
+                            newProduct.setCategoryId(prodcategory);
 
                             boolean productAdded = productService.addProduct(newProduct);
                             if (productAdded) {
@@ -246,12 +248,13 @@ public class E_Commerce_Cart_System {
                             double updatedPrice = sc.nextDouble();
                             System.out.print("Enter new product quantity: ");
                             int updatedQuantity = sc.nextInt();
-
+                            System.out.print("Enter product category: ");
+                            int updatecategory = sc.nextInt();
                             Products updatedProduct = new Products();
                             updatedProduct.setName(updatedProductName);
                             updatedProduct.setPrice(updatedPrice);
                             updatedProduct.setQuantity(updatedQuantity);
-
+                            updatedProduct.setCategoryId(updatecategory);
                             boolean productUpdated = productService.updateProduct(productIdToUpdate, updatedProduct);
                             if (productUpdated) {
                                 System.out.println("Product updated successfully.");

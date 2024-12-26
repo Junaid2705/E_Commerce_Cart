@@ -63,16 +63,3 @@ public class LoginRepoImp extends DBConnections implements LoginRepo {
 
 }
 
-
-
-
-
-
-
-
-//	@Override
-//	public boolean registerUser(LoginModel login) {
-//		// TODO Auto-generated method stub
-//		return false;
-//	}
-//	

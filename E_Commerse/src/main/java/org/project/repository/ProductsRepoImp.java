@@ -1,14 +1,9 @@
 package org.project.repository;
 
 import org.apache.log4j.*;
-import org.project.clientApp.E_Commerce_Cart_System;
-import org.project.models.Products;
-
-
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
-
+import java.util.*;
+import org.project.models.Products;
 
 public class ProductsRepoImp extends DBConnections implements ProductRepo {
 	
@@ -46,7 +41,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
                 product.setQuantity(rs.getInt("quantity"));
                 product.setCategoryId(rs.getInt("cid"));
                 products.add(product);
-                logger.info("Product Added Succesfully");
+                logger.info("Get all products Succesfully");
             }
         } catch (SQLException ex) {
             logger.error("Error in getAllProducts: " + ex.getMessage());
@@ -56,7 +51,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
 
     @Override
     public boolean addProduct(Products product) {
-        String query = "INSERT INTO products (name, price, quantity, cid) VALUES (?, ?, ?, ?)";
+        String query = "insert into products (name, price, quantity, cid) values (?, ?, ?, ?)";
         try {
             stmt = conn.prepareStatement(query);
             stmt.setString(1, product.getName());
@@ -64,6 +59,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
             stmt.setInt(3, product.getQuantity());
             stmt.setInt(4, product.getCategoryId());
             int rowsAffected = stmt.executeUpdate();
+            logger.info("Product Added Succesfully");
             return rowsAffected > 0;
         } catch (SQLException ex) {
             logger.fatal("Error in adding product : "+ex); 
@@ -188,6 +184,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
                 product.setQuantity(rs.getInt("quantity"));
                 product.setCategoryId(rs.getInt("cid"));
                 products.add(product);
+                logger.info("Filtered by Price Succesfully");
             }
         } catch (SQLException ex) {
             logger.error("Error in filterProductsByPriceRange: " + ex.getMessage());
