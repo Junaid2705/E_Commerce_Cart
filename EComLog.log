@@ -1,0 +1,8 @@
+2024-12-26 23:45:08INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-26 23:45:08INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-26 23:45:13INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-26 23:45:36INFO org.project.repository.ProductsRepoImp main Product Added Succesfully 
+2024-12-26 23:47:01INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-26 23:47:01INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-26 23:47:06INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-26 23:47:30INFO org.project.repository.ProductsRepoImp main Product Added Succesfully 

@@ -1,0 +1,57 @@
+2024-12-27 09:00:09INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:00:09INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:00:12INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:01:42INFO org.project.repository.ProductsRepoImp main Product Added Succesfully 
+2024-12-27 09:02:10INFO org.project.repository.ProductsRepoImp main Product Added Succesfully 
+2024-12-27 09:02:32INFO org.project.repository.ProductsRepoImp main Product Added Succesfully 
+2024-12-27 09:03:01INFO org.project.repository.ProductsRepoImp main Product Added Succesfully 
+2024-12-27 09:03:19INFO org.project.repository.ProductsRepoImp main Retrieved products for category: Books 
+2024-12-27 09:09:11INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:09:11INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:09:15INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:09:27INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:09:27INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:09:28INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:12:34INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:12:34INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:12:37INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:14:39INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:14:39INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:14:48INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:17:10INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:17:10INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:17:24INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:17:32INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:24:53INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:24:53INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:24:57INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:25:09INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-27 09:25:24INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:27:40INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:27:40INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:27:43INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:27:49INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:27:49INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:27:50INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:27:56INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:27:56INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:27:58INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:28:06INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:30:27INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:30:27INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:30:30INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:30:35INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 09:30:38INFO org.project.clientApp.E_Commerce_Cart_System main Get all products Succesfully 

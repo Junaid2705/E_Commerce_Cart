@@ -41,7 +41,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
                 product.setQuantity(rs.getInt("quantity"));
                 product.setCategoryId(rs.getInt("cid"));
                 products.add(product);
-                logger.info("Get all products Succesfully");
+                
             }
         } catch (SQLException ex) {
             logger.error("Error in getAllProducts: " + ex.getMessage());
