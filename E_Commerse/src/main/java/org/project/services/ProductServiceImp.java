@@ -52,7 +52,6 @@ public class ProductServiceImp implements ProductService {
 
 	@Override
 	public List<Products> filterProductsByName(String name) {
-		// TODO Auto-generated method stub
 		return productRepository.filterProductsByName(name);
 	}
 

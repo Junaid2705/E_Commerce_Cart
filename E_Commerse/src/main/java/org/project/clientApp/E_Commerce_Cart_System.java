@@ -1,10 +1,7 @@
 package org.project.clientApp;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
-
-import org.project.models.Carts;
 import org.project.models.LoginModel;
 import org.project.services.CartService;
 import org.project.services.CartServiceImpl;
@@ -25,7 +22,8 @@ public class E_Commerce_Cart_System {
 				.configure("F:\\E-Commerce Cart System\\E_Commerse\\src\\main\\resources\\logApplication.properties");
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 
 		Scanner sc = new Scanner(System.in);
 		LoginService loginService = new LoginServiceImp();
@@ -400,8 +398,8 @@ public class E_Commerce_Cart_System {
 						int qty = sc.nextInt();
 						// public boolean isAddCart(String crtUser,String crtCat,String crtProd,int
 						// qty);
-//						boolean b = crtService.addProductToCart(crtUser, crtCat, crtProd, qty);
-//						System.out.println("Result :" + b);
+						boolean b = crtService.addProductToCart(crtUser, crtCat, crtProd, qty);
+						logger.info(b);
 						System.out.println(crtUser+"\t"+crtCat+"\t"+crtProd+"\t"+qty);
 			        	break;
 
@@ -425,5 +423,6 @@ public class E_Commerce_Cart_System {
 				System.out.println("Invalid choice. Please select a valid option.");
 			}
 		}
+		sc.close();
 	}
 }

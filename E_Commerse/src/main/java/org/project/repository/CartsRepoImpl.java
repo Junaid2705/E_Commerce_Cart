@@ -12,7 +12,7 @@ public class CartsRepoImpl extends DBConnections implements CartsRepo {
 	}
 	@Override
 	public boolean addProductToCart(String crtUser, String crtCat, String crtProd, int qty) {
-		System.out.println(crtUser + "\t" + crtCat + "\t" + crtProd + "\t" + qty);
+		//System.out.println(crtUser + "\t" + crtCat + "\t" + crtProd + "\t" + qty);
 		int uId = 0, cId = 0, pId = 0;
 
 		String uIdQuery = "select uid from users where uname=?";
