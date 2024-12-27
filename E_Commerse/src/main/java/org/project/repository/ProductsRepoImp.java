@@ -59,7 +59,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
             stmt.setInt(3, product.getQuantity());
             stmt.setInt(4, product.getCategoryId());
             int rowsAffected = stmt.executeUpdate();
-            logger.info("Product Added Succesfully");
+            
             return rowsAffected > 0;
         } catch (SQLException ex) {
             logger.fatal("Error in adding product : "+ex); 
@@ -168,7 +168,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
     }
 
     @Override
-    public List<Products> filterProductsByPriceRange(double minPrice, double maxPrice) {
+    public List<Products> filterProductsByPriceRange(int minPrice, int maxPrice) {
         List<Products> products = new ArrayList<>();
         String query = "SELECT * FROM products WHERE price BETWEEN ? AND ?";
         try {
@@ -184,7 +184,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
                 product.setQuantity(rs.getInt("quantity"));
                 product.setCategoryId(rs.getInt("cid"));
                 products.add(product);
-                logger.info("Filtered by Price Succesfully");
+                
             }
         } catch (SQLException ex) {
             logger.error("Error in filterProductsByPriceRange: " + ex.getMessage());

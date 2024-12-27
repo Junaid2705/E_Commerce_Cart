@@ -1,16 +1,17 @@
-
-//Service Carts Class Implementation
 package org.project.services;
 
-import org.project.repository.*;
+import java.util.List;
+import org.project.models.Carts;
+import org.project.repository.CartsRepo;
+import org.project.repository.CartsRepoImpl;
 
 public class CartServiceImpl implements CartService {
 
-	CartsRepo crtRepo = new CartsRepoImpl();
-	@Override
-	public boolean isAddCart(String crtUser, String crtCat, String crtProd, int qty) {
-		// TODO Auto-generated method stub
-		return crtRepo.isAddCart(crtUser,crtCat, crtProd,5);
-	}
+    CartsRepo cartRepo = new CartsRepoImpl() ;
 
+	@Override
+	public boolean addProductToCart(String crtUser, String crtCat, String crtProd, int qty) {
+		// TODO Auto-generated method stub
+		return cartRepo.addProductToCart(crtUser, crtCat, crtProd, qty);
+	}
 }

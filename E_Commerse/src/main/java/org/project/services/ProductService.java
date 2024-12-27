@@ -12,6 +12,6 @@ public interface ProductService {
     boolean updateProduct(int id, Products product);
     boolean deleteProduct(int id);
     List<Products> filterProductsByName(String name);
-    List<Products> filterProductsByPriceRange(double minPrice, double maxPrice);
+    List<Products> filterProductsByPriceRange(int minPrice, int maxPrice);
     List<Products> getProductsByCategory(String categoryName);
 }

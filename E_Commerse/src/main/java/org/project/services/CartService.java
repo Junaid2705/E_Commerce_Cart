@@ -1,8 +1,11 @@
-
-//Service Carts Interface
 package org.project.services;
+
+import java.util.List;
+import org.project.models.Carts;
 
 public interface CartService {
 
-	public boolean isAddCart(String crtUser,String crtCat,String crtProd,int qty);
+    // Add a product to the cart
+	boolean addProductToCart(String crtUser, String crtCat, String crtProd, int qty);
+
 }

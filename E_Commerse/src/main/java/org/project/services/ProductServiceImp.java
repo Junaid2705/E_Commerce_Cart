@@ -56,8 +56,7 @@ public class ProductServiceImp implements ProductService {
 		return productRepository.filterProductsByName(name);
 	}
 
-	@Override
-	public List<Products> filterProductsByPriceRange(double minPrice, double maxPrice) {
+	public List<Products> filterProductsByPriceRange(int minPrice, int maxPrice) {
 		// TODO Auto-generated method stub
 		return productRepository.filterProductsByPriceRange(minPrice, maxPrice);
 	}
