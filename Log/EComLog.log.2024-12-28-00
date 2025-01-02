@@ -1,0 +1,551 @@
+2024-12-27 09:00:09INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:00:09INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:00:12INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:01:42INFO org.project.repository.ProductsRepoImp main Product Added Succesfully 
+2024-12-27 09:02:10INFO org.project.repository.ProductsRepoImp main Product Added Succesfully 
+2024-12-27 09:02:32INFO org.project.repository.ProductsRepoImp main Product Added Succesfully 
+2024-12-27 09:03:01INFO org.project.repository.ProductsRepoImp main Product Added Succesfully 
+2024-12-27 09:03:19INFO org.project.repository.ProductsRepoImp main Retrieved products for category: Books 
+2024-12-27 09:09:11INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:09:11INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:09:15INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:09:27INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:09:27INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:09:28INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:12:34INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:12:34INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:12:37INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:14:39INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:14:39INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:14:48INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:17:10INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:17:10INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:17:24INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:17:32INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:24:53INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:24:53INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:24:57INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:25:09INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-27 09:25:24INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:27:40INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:27:40INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:27:43INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:27:49INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:27:49INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:27:50INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:27:56INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:27:56INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:27:58INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:28:06INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:28:09INFO org.project.repository.ProductsRepoImp main Get all products Succesfully 
+2024-12-27 09:30:27INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:30:27INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:30:30INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:30:35INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 09:30:38INFO org.project.clientApp.E_Commerce_Cart_System main Get all products Succesfully 
+2024-12-27 09:40:34INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:40:34INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:40:41INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:40:53INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 09:40:55INFO org.project.clientApp.E_Commerce_Cart_System main Get all products Successfully 
+2024-12-27 09:41:42INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:41:42INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:41:43INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:41:48INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-27 09:42:25INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-27 09:42:26INFO org.project.clientApp.E_Commerce_Cart_System main Product Added successfully 
+2024-12-27 09:42:51INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-27 09:42:52INFO org.project.clientApp.E_Commerce_Cart_System main Product Added successfully 
+2024-12-27 09:43:06INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-27 09:43:07INFO org.project.clientApp.E_Commerce_Cart_System main Product Added successfully 
+2024-12-27 09:43:37INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-27 09:43:38INFO org.project.clientApp.E_Commerce_Cart_System main Product Added successfully 
+2024-12-27 09:43:59INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-27 09:44:15INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-27 09:44:20INFO org.project.clientApp.E_Commerce_Cart_System main Filtered by Price Range 
+2024-12-27 09:44:30ERROR org.project.repository.ProductsRepoImp main Error in filterProductsByPriceRange: Column 'id' not found. 
+2024-12-27 09:44:45INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-27 09:44:47INFO org.project.clientApp.E_Commerce_Cart_System main Filtered by Price Range 
+2024-12-27 09:44:53ERROR org.project.repository.ProductsRepoImp main Error in filterProductsByPriceRange: Column 'id' not found. 
+2024-12-27 09:47:13INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:47:13INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:47:15INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-27 09:47:16INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-27 09:47:29INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:47:34INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-27 09:47:37INFO org.project.clientApp.E_Commerce_Cart_System main Filtered by Price Range 
+2024-12-27 09:47:42ERROR org.project.repository.ProductsRepoImp main Error in filterProductsByPriceRange: Column 'id' not found. 
+2024-12-27 09:49:34INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:49:34INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:49:38INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:49:42INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 09:51:27INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:51:27INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:51:34INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:51:42INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 09:52:17INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:52:17INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:52:21INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:52:27INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 09:53:55INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:53:55INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:53:59INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:54:09INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 09:55:15INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:55:15INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:55:25INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:55:35INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 09:55:59INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:55:59INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:56:09INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:56:09INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:56:17INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:56:22INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 09:58:53INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 09:58:53INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 09:59:04INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 09:59:09INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:00:50INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:00:50INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:00:55INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:01:03INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:01:42INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:01:42INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:01:49INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:01:55INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:06:16INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:06:16INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:06:21INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:06:26INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:06:55INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:06:55INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:06:59INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:07:02INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:08:15INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:08:15INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:08:21INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:08:25INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:09:19INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:09:19INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:09:25INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:09:34INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:12:28INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:12:28INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:12:32INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:12:36INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:13:43INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:13:43INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:13:49INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:13:53INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:17:00INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:17:00INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:17:04INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:17:08INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:17:24INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:17:24INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:17:29INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:17:37INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:19:26INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:19:26INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:19:30INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:19:35INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:19:41INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:19:41INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:19:42INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:19:47INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:22:16INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:22:16INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:22:21INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:22:25INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:23:26INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:23:37INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:23:37INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:23:43INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:23:46INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:25:07INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:25:07INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:25:11INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:25:16INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:28:04INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:28:04INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:28:08INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:28:12INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:29:34INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:29:34INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:29:39INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:29:45INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:29:45INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:29:46INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:29:51INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:31:27INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:31:27INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:31:32INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:31:37INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:32:20INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:32:20INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:32:25INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:32:29INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:33:27INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:33:27INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:33:32INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:33:36INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:40:58INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:40:58INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:41:04INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:41:09INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:42:58INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:42:58INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:43:03INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:43:09INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:51:58INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:51:58INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:52:08INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:52:14INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:52:14INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:52:16INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:52:21INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:53:12INFO org.project.clientApp.E_Commerce_Cart_System main Registration Succesful 
+2024-12-27 10:53:37INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 10:54:21INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 10:54:22INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 10:54:29INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 10:54:34INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 11:01:19INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 11:01:19INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 11:01:25INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 11:01:34INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 11:01:49INFO org.project.repository.CartsRepoImpl main Adding to cart: User=, Category=Fashion, Product=Kurta, Quantity=5 
+2024-12-27 11:01:49WARN org.project.repository.CartsRepoImpl main User not found:  
+2024-12-27 11:02:33INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 11:02:33INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 11:02:40INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 11:02:44INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 11:02:54INFO org.project.repository.CartsRepoImpl main Adding to cart: User=, Category=Fashion, Product=Kurta, Quantity=5 
+2024-12-27 11:02:54WARN org.project.repository.CartsRepoImpl main User not found:  
+2024-12-27 11:06:50INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 11:06:50INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 11:16:55INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 11:16:55INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 11:17:18INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 11:17:22INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 11:17:34INFO org.project.repository.CartsRepoImpl main Adding to cart: User=, Category=Fashion, Product=Kurta, Quantity=5 
+2024-12-27 11:17:34WARN org.project.repository.CartsRepoImpl main User not found:  
+2024-12-27 11:30:21INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 11:30:21INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 11:30:36INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 11:30:56INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-27 11:46:24INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 11:46:24INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 11:46:35INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 11:46:43INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 11:46:52INFO org.project.clientApp.E_Commerce_Cart_System main Adding product to cart 
+2024-12-27 11:47:05WARN org.project.repository.CartsRepoImpl main Product not found with ID: 4 and Category ID: 0 
+2024-12-27 13:01:50INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 13:01:50INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 13:01:53INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 13:01:59INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 13:02:02INFO org.project.clientApp.E_Commerce_Cart_System main Selected invalid option 
+2024-12-27 13:09:42INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 13:09:42INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 13:09:44INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 13:09:49INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 13:12:10INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 13:12:10INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 13:12:13INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 13:12:20INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 13:16:55INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 13:16:55INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 13:17:01INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 13:17:12INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 13:17:20INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 13:19:19INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 13:19:19INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 13:19:22INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 13:19:28INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 13:21:56INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 13:21:56INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 13:22:12INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 13:22:23INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 13:28:27INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 13:28:27INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 13:28:32INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 13:28:37INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 15:02:42INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 15:05:22INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 15:05:22INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 15:05:24INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 15:05:38INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 15:10:33INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 15:10:33INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 15:52:05INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 15:52:05INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 15:53:02INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 15:53:14INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 16:08:04INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 16:08:04INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 16:08:15INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 16:08:28INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 16:08:43INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 16:09:01INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-27 16:09:17INFO org.project.clientApp.E_Commerce_Cart_System main Product Added successfully 
+2024-12-27 16:09:44INFO org.project.clientApp.E_Commerce_Cart_System main All Categories Showed 
+2024-12-27 16:09:48INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-27 16:10:22INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 16:10:22INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 16:10:23INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 16:10:29INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 19:30:02INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 19:30:02INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 19:30:09INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 19:30:15INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 19:32:51INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 19:32:51INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 19:33:08INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 19:33:15INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 19:35:43INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 19:35:43INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 19:35:48INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 19:36:03INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 19:36:25INFO org.project.clientApp.E_Commerce_Cart_System main true 
+2024-12-27 19:39:24INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 19:39:24INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 19:39:29INFO org.project.clientApp.E_Commerce_Cart_System main System Existed... 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Dec 27 20:01:51 IST 2024<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+</table>
+<br>
+</body></html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Dec 27 20:01:51 IST 2024<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+</table>
+<br>
+</body></html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Dec 27 20:01:51 IST 2024<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.project.repository.DBConfig category">org.project.repository.DBConfig</td>
+<td title="Message">Database is Connected</td>
+</tr>
+</table>
+<br>
+</body></html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Dec 27 20:01:52 IST 2024<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+</table>
+<br>
+</body></html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Dec 27 20:01:52 IST 2024<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+</table>
+<br>
+</body></html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Dec 27 20:01:52 IST 2024<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>31</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="org.project.clientApp.E_Commerce_Cart_System category">org.project.clientApp.E_Commerce_Cart_System</td>
+<td title="Message">Main Method Started</td>
+</tr>
+2024-12-27 20:02:02INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 20:02:02INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 22:29:27INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 22:29:27INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 22:29:31INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 22:29:39INFO org.project.clientApp.E_Commerce_Cart_System main User is logged in 
+2024-12-27 22:29:42INFO org.project.clientApp.E_Commerce_Cart_System main Adding multiple products to cart 
+2024-12-27 22:30:29FATAL org.project.repository.CartsRepoImpl main Exception generated during batch insert: java.sql.SQLException: Statement.executeQuery() cannot issue statements that do not produce result sets. 
+2024-12-27 23:55:52INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-27 23:55:52INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-27 23:56:37INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-27 23:56:43INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-27 23:56:49INFO org.project.clientApp.E_Commerce_Cart_System main Category Updated Succssfully 
+2024-12-27 23:57:11INFO org.project.clientApp.E_Commerce_Cart_System main All Categories Showed 
+2024-12-27 23:57:15INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-27 23:57:23INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-27 23:57:26INFO org.project.clientApp.E_Commerce_Cart_System main Filtered by Category Name 
+2024-12-27 23:57:30INFO org.project.repository.ProductsRepoImp main Retrieved products for category: Book 
+2024-12-27 23:57:37INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-27 23:57:44INFO org.project.clientApp.E_Commerce_Cart_System main Category Added Succssfully 
+2024-12-27 23:57:49INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-27 23:57:51INFO org.project.clientApp.E_Commerce_Cart_System main Category Deleted Succssfully 
+2024-12-27 23:58:00INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-28 00:01:11INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-28 00:01:11INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-28 00:02:09INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-28 00:02:09INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-28 00:02:25INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-28 00:02:33INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-28 00:18:45INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-28 00:18:45INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-28 00:19:00INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-28 00:19:00INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-28 00:20:54INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-28 00:20:54INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-28 00:21:20INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-28 00:21:20INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-28 00:21:35INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-28 00:21:35INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-28 00:22:03INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-28 00:22:03INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-28 00:22:07INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-28 00:22:12INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-28 00:22:14INFO org.project.clientApp.E_Commerce_Cart_System main Filtered by Price Range 
+2024-12-28 00:22:17ERROR org.project.repository.ProductsRepoImp main Error in filterProductsByPriceRange: Column 'id' not found. 
+2024-12-28 00:22:50INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-28 00:22:50INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-28 00:22:53INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-28 00:22:59INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-28 00:22:59INFO org.project.clientApp.E_Commerce_Cart_System main Filtered by Price Range 
+2024-12-28 00:23:03ERROR org.project.repository.ProductsRepoImp main Error in filterProductsByPriceRange: Column 'id' not found. 
+2024-12-28 00:26:43INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-28 00:26:43INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-28 00:26:47INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-28 00:26:52INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-28 00:26:53INFO org.project.clientApp.E_Commerce_Cart_System main Filtered by Price Range 
+2024-12-28 00:26:57ERROR org.project.repository.ProductsRepoImp main Error in filterProductsByPriceRange: Column 'id' not found. 
+2024-12-28 00:29:52INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-28 00:29:52INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-28 00:29:57INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-28 00:30:03INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-28 00:30:04INFO org.project.clientApp.E_Commerce_Cart_System main Filtered by Price Range 
+2024-12-28 00:30:07ERROR org.project.repository.ProductsRepoImp main Error in filterProductsByPriceRange: Column 'id' not found. 

@@ -1,0 +1,17 @@
+2024-12-28 11:05:24INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-28 11:05:24INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-28 11:05:29INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-28 12:33:34INFO org.project.repository.DBConfig main Database is Connected 
+2024-12-28 12:33:34INFO org.project.clientApp.E_Commerce_Cart_System main Main Method Started 
+2024-12-28 12:33:59INFO org.project.clientApp.E_Commerce_Cart_System main Registration Succesful 
+2024-12-28 12:34:23INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-28 12:34:39INFO org.project.clientApp.E_Commerce_Cart_System main Login Succesful 
+2024-12-28 12:35:05INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-28 12:37:24INFO org.project.clientApp.E_Commerce_Cart_System main Category Added Succssfully 
+2024-12-28 12:38:10INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-28 12:38:17INFO org.project.clientApp.E_Commerce_Cart_System main Product Added successfully 
+2024-12-28 12:38:52INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-28 12:39:03INFO org.project.clientApp.E_Commerce_Cart_System main Admin is Logged in 
+2024-12-28 12:39:05INFO org.project.clientApp.E_Commerce_Cart_System main Filtered by Category Name 
+2024-12-28 12:39:08INFO org.project.repository.ProductsRepoImp main Retrieved products for category: Book 
+2024-12-28 12:39:47INFO org.project.clientApp.E_Commerce_Cart_System main System Existed... 

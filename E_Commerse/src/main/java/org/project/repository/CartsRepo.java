@@ -1,18 +1,21 @@
 package org.project.repository;
 
 import java.util.List;
-import org.project.models.Carts;
 
 public interface CartsRepo {
+	
+	    boolean addProductsToCart(String crtUser, List<String> crtCats, List<String> crtProds, List<Integer> qty);
 
-    // Method to add a product to the cart
-    
+	    List<String[]> viewCart(String crtUser);
+	    
+	    boolean clearCart(String crtUser);
+	    
+	    boolean updateCart(String crtUser, String crtCat, String crtProd, int qty);
+	    
+	//boolean addProductsToCart(String crtUser, String crtCat, String crtProd, int qty);
+  
+    //List<Carts> getCartByUserId(int uid);
 
-	boolean addProductToCart(String crtUser, String crtCat, String crtProd, int qty);
-
-//    // Method to retrieve a user's cart by user ID
-//    List<Carts> getCartByUserId(int uid);
-//
-//    // Method to remove a product from the cart by product ID and user ID
-//    boolean removeProductFromCart(int removeProductId, int uid);
+   
+     //boolean removeProductFromCart(int removeProductId, int uid);
 }

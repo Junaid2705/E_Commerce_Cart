@@ -14,7 +14,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
 	 }
     @Override
     public boolean isProduct(Products product) {
-        String query = "SELECT * FROM products WHERE name = ?";
+        String query = "select * from products where name = ?";
         try {
             stmt = conn.prepareStatement(query);
             stmt.setString(1, product.getName());
@@ -29,7 +29,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
     @Override
     public List<Products> getAllProducts() {
         List<Products> products = new ArrayList<>();
-        String query = "SELECT * FROM products";
+        String query = "select * from products";
         try {
             stmt = conn.prepareStatement(query);
             rs = stmt.executeQuery();
@@ -37,7 +37,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
                 Products product = new Products();
                 product.setId(rs.getInt("pid"));
                 product.setName(rs.getString("name"));
-                product.setPrice(rs.getDouble("price"));
+                product.setPrice(rs.getInt("price"));
                 product.setQuantity(rs.getInt("quantity"));
                 product.setCategoryId(rs.getInt("cid"));
                 products.add(product);
@@ -70,7 +70,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
     @Override
     public List<Products> getProductsByName(String name) {
         List<Products> products = new ArrayList<>();
-        String query = "SELECT * FROM products WHERE name LIKE ?";
+        String query = "select * from products where name like ?";
         try {
             stmt = conn.prepareStatement(query);
             stmt.setString(1, "%" + name + "%");
@@ -79,7 +79,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
                 Products product = new Products();
                 product.setId(rs.getInt("pid"));
                 product.setName(rs.getString("name"));
-                product.setPrice(rs.getDouble("price"));
+                product.setPrice(rs.getInt("price"));
                 product.setQuantity(rs.getInt("quantity"));
                 product.setCategoryId(rs.getInt("cid"));
                 products.add(product);
@@ -93,7 +93,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
     @Override
     public Products getProductById(int id) {
         Products product = null;
-        String query = "SELECT * FROM products WHERE pid = ?";
+        String query = "select * from products where pid = ?";
         try {
             stmt = conn.prepareStatement(query);
             stmt.setInt(1, id);
@@ -102,7 +102,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
                 product = new Products();
                 product.setId(rs.getInt("pid"));
                 product.setName(rs.getString("name"));
-                product.setPrice(rs.getDouble("price"));
+                product.setPrice(rs.getInt("price"));
                 product.setQuantity(rs.getInt("quantity"));
                 product.setCategoryId(rs.getInt("cid"));
             }
@@ -114,7 +114,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
 
     @Override
     public boolean updateProduct(int id, Products product) {
-        String query = "UPDATE products SET name = ?, price = ?, quantity = ?, cid = ? WHERE pid = ?";
+        String query = "update products set name = ?, price = ?, quantity = ?, cid = ? where pid = ?";
         try {
             stmt = conn.prepareStatement(query);
             stmt.setString(1, product.getName());
@@ -132,7 +132,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
 
     @Override
     public boolean deleteProduct(int id) {
-        String query = "DELETE FROM products WHERE pid = ?";
+        String query = "delete from products where pid = ?";
         try {
             stmt = conn.prepareStatement(query);
             stmt.setInt(1, id);
@@ -147,16 +147,16 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
     @Override
     public List<Products> filterProductsByName(String name) {
         List<Products> products = new ArrayList<>();
-        String query = "SELECT * FROM products WHERE name LIKE ?";
+        String query = "select * from products where name like ?";
         try {
             stmt = conn.prepareStatement(query);
-            stmt.setString(1, "%" + name + "%");
+            stmt.setString(1,name);
             rs = stmt.executeQuery();
             while (rs.next()) {
                 Products product = new Products();
                 product.setId(rs.getInt("id"));
                 product.setName(rs.getString("name"));
-                product.setPrice(rs.getDouble("price"));
+                product.setPrice(rs.getInt("price"));
                 product.setQuantity(rs.getInt("quantity"));
                 product.setCategoryId(rs.getInt("cid"));
                 products.add(product);
@@ -168,25 +168,26 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
     }
 
     @Override
-    public List<Products> filterProductsByPriceRange(int minPrice, int maxPrice) {
+    public List<Products> filterProductsByPriceRange(int minPrice, int maxPrice) 
+    {
         List<Products> products = new ArrayList<>();
-        String query = "SELECT * FROM products WHERE price BETWEEN ? AND ?";
+        String query = "select * from products where price between ? and ?";
         try {
             stmt = conn.prepareStatement(query);
-            stmt.setDouble(1, minPrice);
-            stmt.setDouble(2, maxPrice);
+            stmt.setInt(1, minPrice);
+            stmt.setInt(2, maxPrice);
             rs = stmt.executeQuery();
             while (rs.next()) {
                 Products product = new Products();
                 product.setId(rs.getInt("id"));
                 product.setName(rs.getString("name"));
-                product.setPrice(rs.getDouble("price"));
+                product.setPrice(rs.getInt("price"));
                 product.setQuantity(rs.getInt("quantity"));
                 product.setCategoryId(rs.getInt("cid"));
                 products.add(product);
                 
             }
-        } catch (SQLException ex) {
+        } catch (Exception ex) {
             logger.error("Error in filterProductsByPriceRange: " + ex.getMessage());
         }
         return products;
@@ -196,7 +197,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
 	public List<Products> getProductsByCategory(String categoryName) {
 	    List<Products> products = new ArrayList<>();
 	    String query = 
-	        "SELECT p.pid, p.name, p.price, p.quantity, p.cid FROM products p INNER JOIN productcategories c ON p.cid = c.cid WHERE c.name = ? ";
+	        "select p.pid, p.name, p.price, p.quantity, p.cid from products p inner join productcategories c on p.cid = c.cid where c.name = ? ";
 	
 	    try {
 	        stmt = conn.prepareStatement(query);
@@ -206,7 +207,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
 	            Products product = new Products();
 	            product.setId(rs.getInt("pid"));
 	            product.setName(rs.getString("name"));
-	            product.setPrice(rs.getDouble("price"));
+	            product.setPrice(rs.getInt("price"));
 	            product.setQuantity(rs.getInt("quantity"));
 	            product.setCategoryId(rs.getInt("cid"));
 	            products.add(product);

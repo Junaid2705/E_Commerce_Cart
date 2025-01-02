@@ -21,17 +21,14 @@ public class ProductCatServiceImpl implements ProductCatService {
     
     @Override
     public List<ProductCatModel> getAllProductCats() {
-    	
-    	 // cal repo method get all categories
+    	// TODO Auto-generated method stub
         return productrepo.getAllProductCats(); 
     }
     
     
     @Override
     public boolean addProductCat(ProductCatModel procat) {
-    	
-    	
-//    	Call  repo method fr add category
+    	// TODO Auto-generated method stub
         return productrepo.addProductCat(procat);  
     }
 

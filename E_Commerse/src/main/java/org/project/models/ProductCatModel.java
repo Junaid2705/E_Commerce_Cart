@@ -1,4 +1,4 @@
-package org.project.models;
+ package org.project.models;
 
 public class ProductCatModel {
 	

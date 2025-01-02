@@ -62,9 +62,7 @@ public class ProductServiceImp implements ProductService {
 
 	@Override
 	public List<Products> getProductsByCategory(String categoryName) {
-        if (categoryName == null || categoryName.isEmpty()) {
-            throw new IllegalArgumentException("Category name cannot be null or empty");
-        }
+		// TODO Auto-generated method stub
         return productRepository.getProductsByCategory(categoryName);
     }
 
