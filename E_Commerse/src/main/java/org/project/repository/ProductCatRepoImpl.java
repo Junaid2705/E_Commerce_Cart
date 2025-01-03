@@ -22,7 +22,7 @@ public class ProductCatRepoImpl extends DBConnections implements ProductCatRepo 
             stmt.setString(1, procat.getName());
             rs = stmt.executeQuery();
             return rs.next();
-        } catch (SQLException ex) {
+        } catch (Exception ex) {
             System.out.println("Error in isProductCat: " + ex.getMessage());
             return false;
         }
@@ -40,7 +40,7 @@ public class ProductCatRepoImpl extends DBConnections implements ProductCatRepo 
                 category.setName(rs.getString("name"));
                 categories.add(category);
             }
-        } catch (SQLException ex) {
+        } catch (Exception ex) {
             logger.error("Error in getAllProductsCats is "+ex);
         }
         return categories;
@@ -54,7 +54,7 @@ public class ProductCatRepoImpl extends DBConnections implements ProductCatRepo 
             stmt.setString(1, procat.getName());
             int values = stmt.executeUpdate();
             return values > 0;
-        } catch (SQLException ex) {
+        } catch (Exception ex) {
         	logger.error("Error in addProduct is "+ex);
             return false;
         }
@@ -73,7 +73,7 @@ public class ProductCatRepoImpl extends DBConnections implements ProductCatRepo 
                 category.setName(rs.getString("name"));
                 categories.add(category);
             }
-        } catch (SQLException ex) {
+        } catch (Exception ex) {
             logger.error("Error in getProductCatsByName: " + ex.getMessage());
         }
         return categories;
@@ -91,7 +91,7 @@ public class ProductCatRepoImpl extends DBConnections implements ProductCatRepo 
                 category = new ProductCatModel();
                 category.setName(rs.getString("name"));
             }
-        } catch (SQLException ex) {
+        } catch (Exception ex) {
             logger.error("Error in getProductCatById: " + ex.getMessage());
         }
         return category;
@@ -106,7 +106,7 @@ public class ProductCatRepoImpl extends DBConnections implements ProductCatRepo 
             stmt.setInt(2, id);
             int values = stmt.executeUpdate();
             return values > 0;
-        } catch (SQLException ex) {
+        } catch (Exception ex) {
             logger.error("Error in updateProductCat: " + ex.getMessage());
             return false;
         }

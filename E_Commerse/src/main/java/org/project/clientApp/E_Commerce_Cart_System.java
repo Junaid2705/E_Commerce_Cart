@@ -14,6 +14,8 @@ import org.project.services.ProductCatServiceImpl;
 import org.project.models.Products;
 import org.project.repository.CartsRepoImpl;
 import org.project.services.ProductService;
+import org.project.services.OrdersService;
+import org.project.services.OrdersServiceImpl;
 import org.project.services.ProductServiceImp;
 import org.apache.log4j.*;
 
@@ -33,7 +35,7 @@ public class E_Commerce_Cart_System {
 		ProductCatModel productCatModel = new ProductCatModel();
 		ProductService productService = new ProductServiceImp();
 		CartService crtService = new CartServiceImpl();
-
+		OrdersService ordService = new OrdersServiceImpl();
 		boolean value = true;
 		boolean isAdminLoggedIn = false;
 		boolean isUserLoggedIn = false;
@@ -78,13 +80,13 @@ public class E_Commerce_Cart_System {
 
 						String userType = loginModel.getUserType();
 						if ("admin".equalsIgnoreCase(userType)) {
-							System.out.println("Welcome Admin! You have full access.");
+							System.out.println("Welcome " + loginModel.getName() + ", you have admin access.");
 							isAdminLoggedIn = true;
 						} else {
 							isAdminLoggedIn = false;
 						}
 						if ("user".equalsIgnoreCase(userType)) {
-							System.out.println("Welcome " + loginModel.getName() + ", you have limited access.");
+							System.out.println("Welcome " + loginModel.getName() + ", you have user access.");
 							isUserLoggedIn = true;
 						} else {
 							isUserLoggedIn = false;
@@ -345,7 +347,7 @@ public class E_Commerce_Cart_System {
 				logger.info("User is logged in");
 				if (!isUserLoggedIn) {
 					System.out.println("These options are for logged-in users only.");
-					break;
+
 				}
 				System.out.println("User Options:");
 				System.out.println("1. Show All Products");
@@ -355,8 +357,13 @@ public class E_Commerce_Cart_System {
 				System.out.println("5. Add Product to Cart");
 				System.out.println("6. View Cart");
 				System.out.println("7. Update Cart");
+				System.out.println("8. Delete Cart");
+				System.out.println("9.Show Cart Before Transaction");
+				System.out.println("10. Check Out Cart Products ");
+				System.out.println("11. Show Bill");
 				System.out.print("Enter your choice: ");
 				int userChoice = sc.nextInt();
+
 				switch (userChoice) {
 				case 1:
 					logger.info("Get all products successfully");
@@ -439,6 +446,12 @@ public class E_Commerce_Cart_System {
 					}
 					boolean b = crtService.addProductsToCart(crtUser, crtCats, crtProds, qtys);
 					logger.info(b);
+					if (b) {
+						System.out.println("Products Added in Cart Succesfully");
+					} else {
+						logger.error("Failed to add Products in Cart");
+						System.out.println("Products Added in Cart Failed");
+					}
 					break;
 				case 6:
 					sc.nextLine();
@@ -460,8 +473,8 @@ public class E_Commerce_Cart_System {
 					} catch (Exception e) {
 						logger.fatal("Exception occurred while viewing the cart for user: " + crtUser1 + " - " + e);
 					}
-				break;
-				
+					break;
+
 				case 7:
 					System.out.println("Enter User name:");
 					String crtUser2 = sc.nextLine();
@@ -472,21 +485,85 @@ public class E_Commerce_Cart_System {
 					System.out.println("Enter Quantity:");
 					int qty = sc.nextInt();
 
-					boolean success = crtService.updateCart(crtUser2, crtCat, crtProd, qty);
-					if (success) {
-					    System.out.println("Cart updated successfully.");
+					boolean b1 = crtService.updateCart(crtUser2, crtCat, crtProd, qty);
+					if (b1) {
+						System.out.println("Cart updated successfully.");
 					} else {
-					    System.out.println("Failed to update the cart.");
+						System.out.println("Failed to update the cart.");
+					}
+					break;
+				case 8:
+					sc.nextLine();
+					System.out.println("Enter User name:");
+					String crtUser3 = sc.nextLine();
+					boolean b3 = crtService.clearCart(crtUser3);
+					if (b3) {
+						System.out.println("Cart Deleted successfully.");
+					} else {
+						System.out.println("Failed to delete the cart.");
+					}
+					break;
+
+				case 9:
+				    System.out.print("Enter your username: ");
+				    String userName = sc.next();
+
+				    // Fetch transaction details from the service
+				    List<String> transactionDetails = ordService.showTransaction(userName);
+
+				    if (transactionDetails.isEmpty()) {
+				        System.out.println("No transactions found for the user: " + userName);
+				    } else {
+				        System.out.println("\nTransaction Details:");
+				        for (String detail : transactionDetails) {
+				            System.out.println(detail);
+				        }
+				    }
+				    break;
+
+
+				case 10:
+//						| tid | uid  | status  | total | payType |
+//						+-----+------+---------+-------+---------+
+//						|   1 |   19 | Pending | 66750 | Online  |
+
+					sc.nextLine();
+
+					System.out.println("Enter UserName:");
+					String uName = sc.nextLine(); // iqra
+					System.out.println("Enter Status Type (Pending/Completed/Failed)");
+					String pStatus = sc.nextLine();
+					System.out.println("Enter Payment Type (Online/Cash)");
+					String pType = sc.nextLine();
+					b1 = ordService.isTransaction(uName, pStatus, pType);
+					// System.out.println("Result :"+b1);
+					if (b1) {
+						System.out.println("CheckOut Successoful");
+					} else {
+						System.out.println("CheckOut Failed");
+						logger.error("CheckOut Failed");
 					}
 
 					break;
-			default:
-				logger.info("Selected invalid option");
-				System.out.println("Invalid choice. Please select a valid option.");
+				case 11:
+				    System.out.print("Enter your username: ");
+				    String username = sc.next();
 
+				    List<String> finalBillDetails = ordService.showFinalBill(username);
+
+				    System.out.println("\nFinal Bill Details:");
+				    for (String detail : finalBillDetails) {
+				        System.out.println(detail);
+				    }
+				    break;
+
+				default:
+					logger.info("Selected invalid option");
+					System.out.println("Invalid choice. Please select a valid option.");
+
+					break;
+				}
 				break;
-			}
-			break;
 			case 0:
 				logger.info("System Existed...");
 				System.out.println("Exiting the application...");

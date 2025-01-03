@@ -106,7 +106,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
                 product.setQuantity(rs.getInt("quantity"));
                 product.setCategoryId(rs.getInt("cid"));
             }
-        } catch (SQLException ex) {
+        } catch (Exception ex) {
             logger.error("Error in getProductById: " + ex.getMessage());
         }
         return product;
@@ -138,7 +138,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
             stmt.setInt(1, id);
             int rowsAffected = stmt.executeUpdate();
             return rowsAffected > 0;
-        } catch (SQLException ex) {
+        } catch (Exception ex) {
             logger.error("Error in deleteProduct: " + ex.getMessage());
             return false;
         }
@@ -161,7 +161,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
                 product.setCategoryId(rs.getInt("cid"));
                 products.add(product);
             }
-        } catch (SQLException ex) {
+        } catch (Exception ex) {
             logger.error("Error in filterProductsByName: " + ex.getMessage());
         }
         return products;
@@ -213,7 +213,7 @@ public class ProductsRepoImp extends DBConnections implements ProductRepo {
 	            products.add(product);
 	        }
 	        logger.info("Retrieved products for category: " + categoryName);
-	    } catch (SQLException ex) {
+	    } catch (Exception ex) {
 	        logger.error("Error in getProductsByCategory: " + ex.getMessage());
 	    }
 	    return products;

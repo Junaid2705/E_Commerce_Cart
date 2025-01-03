@@ -124,8 +124,6 @@ public class CartsRepoImpl extends DBConnections implements CartsRepo {
         int uId = 0;
         String uIdQuery = "select uid from users where uname=?";
         String deleteQuery = "delete from carts where uid=?";
-
-        // Fetch User ID
         try {
             stmt = conn.prepareStatement(uIdQuery);
             stmt.setString(1, crtUser);
