@@ -40,9 +40,10 @@ public class E_Commerce_Cart_System {
 		boolean isAdminLoggedIn = false;
 		boolean isUserLoggedIn = false;
 		logger.info("Main Method Started");
-		System.out.println("Welcome to E-Commerce Cart...");
+		System.out.println("...Welcome to E-Commerce Cart...");
+		System.out.println("------------------------------");
 		while (value) {
-			System.out.println("Please choose an option:");
+			System.out.println("\nPlease choose an option:");
 			System.out.println("Login - Press 1");
 			if (isAdminLoggedIn) {
 				System.out.println("Admin Options - Press 2");
@@ -51,15 +52,15 @@ public class E_Commerce_Cart_System {
 				System.out.println("User Options - Press 3");
 			}
 			System.out.println("Exit - Press 0");
-			System.out.print("Enter choice: ");
+			System.out.print("\nEnter choice: ");
 			int choice = sc.nextInt();
 
 			switch (choice) {
 			case 1:
-				System.out.println("Do you want to login or register?");
+				System.out.println("\nDo you want to login or register?");
 				System.out.println("1. Login");
 				System.out.println("2. Register");
-				System.out.print("Enter choice: ");
+				System.out.print("\nEnter choice: ");
 				int actionChoice = sc.nextInt();
 
 				switch (actionChoice) {
@@ -76,7 +77,7 @@ public class E_Commerce_Cart_System {
 					boolean isUser = loginService.isUser(loginModel);
 
 					if (isUser) {
-						System.out.println("Login successful");
+						System.out.println("\nLogin successful...");
 
 						String userType = loginModel.getUserType();
 						if ("admin".equalsIgnoreCase(userType)) {
@@ -505,22 +506,21 @@ public class E_Commerce_Cart_System {
 					break;
 
 				case 9:
-				    System.out.print("Enter your username: ");
-				    String userName = sc.next();
+					System.out.print("Enter your username: ");
+					String userName = sc.next();
 
-				    // Fetch transaction details from the service
-				    List<String> transactionDetails = ordService.showTransaction(userName);
+					// Fetch transaction details from the service
+					List<String> transactionDetails = ordService.showTransaction(userName);
 
-				    if (transactionDetails.isEmpty()) {
-				        System.out.println("No transactions found for the user: " + userName);
-				    } else {
-				        System.out.println("\nTransaction Details:");
-				        for (String detail : transactionDetails) {
-				            System.out.println(detail);
-				        }
-				    }
-				    break;
-
+					if (transactionDetails.isEmpty()) {
+						System.out.println("No transactions found for the user: " + userName);
+					} else {
+						System.out.println("\nTransaction Details:");
+						for (String detail : transactionDetails) {
+							System.out.println(detail);
+						}
+					}
+					break;
 
 				case 10:
 //						| tid | uid  | status  | total | payType |
@@ -546,16 +546,16 @@ public class E_Commerce_Cart_System {
 
 					break;
 				case 11:
-				    System.out.print("Enter your username: ");
-				    String username = sc.next();
+					System.out.print("Enter your username: ");
+					String username = sc.next();
 
-				    List<String> finalBillDetails = ordService.showFinalBill(username);
+					List<String> finalBillDetails = ordService.showFinalBill(username);
 
-				    System.out.println("\nFinal Bill Details:");
-				    for (String detail : finalBillDetails) {
-				        System.out.println(detail);
-				    }
-				    break;
+					System.out.println("\nFinal Bill Details:");
+					for (String detail : finalBillDetails) {
+						System.out.println(detail);
+					}
+					break;
 
 				default:
 					logger.info("Selected invalid option");
